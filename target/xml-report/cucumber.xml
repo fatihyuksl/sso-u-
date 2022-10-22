@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="39.744">
-    <testcase classname="US1012 Kullanici register yapabilmeli" name="TC17 kullanici uygun datalarla register olabilmeli" time="38.866">
-        <system-out><![CDATA[Given kullanici "automationUrl" anasayfasinda...............................passed
-And user sign in linkine tiklar.............................................passed
-And kullanici 5 sn bekler...................................................passed
-And user Create and account bölümüne email adresi girer.....................passed
-And Create an Account butonuna basar........................................passed
-And user kisisel bilgilerini ve iletisim bilgilerini girer..................passed
-And kullanici 5 sn bekler...................................................passed
-And user Register butonuna basar............................................passed
-Then hesap olustugunu dogrular..............................................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.068">
+    <testcase classname="US1013 kullanici excel bilgilerine ulasir" name="TC18 kullanici excel bilgilerini kullanir" time="6.519">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given kullanici excel  dosyasini kullanilabilir hale getirir................undefined
+Then 1.satirdaki 2.hucreyi yazdirir.........................................skipped
+And baskenti Jakarta olan ulke ismini yazdirir..............................skipped
+And Ulke sayisinin 190 oldugunu test eder...................................skipped
+And Fiziki olarak kullanilan satir sayisinin 191 oldugunu test eder.........skipped
+]]></failure>
     </testcase>
 </testsuite>
