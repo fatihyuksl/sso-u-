@@ -12,12 +12,12 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@parametre",//2 tagi ayni anada calistirmak isterseniz "@gp1 or @gp2" seklinde yazariz
+        tags = "@scenarioOutline",//2 tagi ayni anada calistirmak isterseniz "@gp1 or @gp2" seklinde yazariz
         dryRun = false
 )
 
 
-public class Runner {
+public class TestRunner {
 /*
 Runner Class'i TestNG'deki XML mantigi ile calisir
 Calistirmak istedigimiz senaryolari tag belirtiriz

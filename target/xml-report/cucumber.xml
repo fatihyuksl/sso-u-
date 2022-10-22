@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="39.118">
-    <testcase classname="US1003 Kullanici parametre kullanarak arama yapabilmeli" name="TC06 kullanici parametre ile amazonda arama yapabilmeli" time="38.673">
-        <failure message="" type="java.lang.AssertionError"><![CDATA[Given kullanici amazon anasayfasinda........................................passed
-And kullanici "Java" icin arama yapar.......................................passed
-And sonuclarin "Hava" icerdigini test eder..................................failed
-Then sayfayi kapatir........................................................skipped
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepDefinitions.AmazonDefinitions.sonuclarinIcerdiginiTestEder(AmazonDefinitions.java:70)
-	at ✽.sonuclarin "Hava" icerdigini test eder(file:///C:/Selenium/com.batch59Cucumber/src/test/resources/features/US1003_parametreKullanimi.feature:8)
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="87.458">
+    <testcase classname="US1007 kullanici amazonda istedigi kelimeleri aratir" name="TC12 amazonda listedeki elementleri aratma" time="34.512">
+        <system-out><![CDATA[Given kullanici "amazonUrl" anasayfasinda...................................passed
+Then kullanici "nutella" icin arama yapar...................................passed
+And sonuclarin "nutella" icerdigini test eder...............................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1007 kullanici amazonda istedigi kelimeleri aratir" name="TC12 amazonda listedeki elementleri aratma 2" time="17.366">
+        <system-out><![CDATA[Given kullanici "amazonUrl" anasayfasinda...................................passed
+Then kullanici "java" icin arama yapar......................................passed
+And sonuclarin "java" icerdigini test eder..................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1007 kullanici amazonda istedigi kelimeleri aratir" name="TC12 amazonda listedeki elementleri aratma 3" time="17.456">
+        <system-out><![CDATA[Given kullanici "amazonUrl" anasayfasinda...................................passed
+Then kullanici "elma" icin arama yapar......................................passed
+And sonuclarin "elma" icerdigini test eder..................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1007 kullanici amazonda istedigi kelimeleri aratir" name="TC12 amazonda listedeki elementleri aratma 4" time="17.593">
+        <system-out><![CDATA[Given kullanici "amazonUrl" anasayfasinda...................................passed
+Then kullanici "armut" icin arama yapar.....................................passed
+And sonuclarin "armut" icerdigini test eder.................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
     </testcase>
 </testsuite>
