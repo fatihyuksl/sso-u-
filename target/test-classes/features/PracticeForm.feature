@@ -1,6 +1,6 @@
 @practiceForm
 Feature: Form doldurma
-
+@pr1
   Scenario Outline: Practice form doldurma
 
 

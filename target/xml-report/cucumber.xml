@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="87.458">
-    <testcase classname="US1007 kullanici amazonda istedigi kelimeleri aratir" name="TC12 amazonda listedeki elementleri aratma" time="34.512">
-        <system-out><![CDATA[Given kullanici "amazonUrl" anasayfasinda...................................passed
-Then kullanici "nutella" icin arama yapar...................................passed
-And sonuclarin "nutella" icerdigini test eder...............................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US1007 kullanici amazonda istedigi kelimeleri aratir" name="TC12 amazonda listedeki elementleri aratma 2" time="17.366">
-        <system-out><![CDATA[Given kullanici "amazonUrl" anasayfasinda...................................passed
-Then kullanici "java" icin arama yapar......................................passed
-And sonuclarin "java" icerdigini test eder..................................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US1007 kullanici amazonda istedigi kelimeleri aratir" name="TC12 amazonda listedeki elementleri aratma 3" time="17.456">
-        <system-out><![CDATA[Given kullanici "amazonUrl" anasayfasinda...................................passed
-Then kullanici "elma" icin arama yapar......................................passed
-And sonuclarin "elma" icerdigini test eder..................................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US1007 kullanici amazonda istedigi kelimeleri aratir" name="TC12 amazonda listedeki elementleri aratma 4" time="17.593">
-        <system-out><![CDATA[Given kullanici "amazonUrl" anasayfasinda...................................passed
-Then kullanici "armut" icin arama yapar.....................................passed
-And sonuclarin "armut" icerdigini test eder.................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="39.744">
+    <testcase classname="US1012 Kullanici register yapabilmeli" name="TC17 kullanici uygun datalarla register olabilmeli" time="38.866">
+        <system-out><![CDATA[Given kullanici "automationUrl" anasayfasinda...............................passed
+And user sign in linkine tiklar.............................................passed
+And kullanici 5 sn bekler...................................................passed
+And user Create and account bölümüne email adresi girer.....................passed
+And Create an Account butonuna basar........................................passed
+And user kisisel bilgilerini ve iletisim bilgilerini girer..................passed
+And kullanici 5 sn bekler...................................................passed
+And user Register butonuna basar............................................passed
+Then hesap olustugunu dogrular..............................................passed
 And sayfayi kapatir.........................................................passed
 ]]></system-out>
     </testcase>

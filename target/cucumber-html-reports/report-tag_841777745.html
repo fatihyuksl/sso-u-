@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
         <td>1</td>
-      <td>22 Oct 2022, 21:30</td>
+      <td>22 Oct 2022, 22:44</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@scenarioOutline</td>
-          <td      class="passed"    >16</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >13</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >2</td>
           <td >0</td>
           <td >0</td>
           <td class="total">16</td>
 
-          <td  class="passed"    >4</td>
-          <td >0</td>
+          <td  class="passed"    >3</td>
+          <td  class="failed"    >1</td>
           <td class="total">4</td>
 
-          <td class="duration" data-value="74350342500">1:14.350</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="61518777300">1:1.518</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -173,22 +173,23 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_3347770226.html">US1007 kullanici amazonda istedigi kelimeleri aratir</a>
+      <a href="report-feature_3_3347770226.html">US1007 kullanici amazonda istedigi kelimeleri aratir</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_841777745.html">@scenarioOutline</a>
+       <a href="report-tag_2149501486.html">@pr1</a>
 </div>
 
 
-  <span class="lead-duration duration">30.835</span>
+  <span class="lead-duration duration">20.799</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">TC12 amazonda listedeki elementleri aratma</span>
 
@@ -199,16 +200,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -218,7 +219,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -226,7 +227,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">kullanici <span class="argument">&quot;amazonUrl&quot;</span> anasayfasinda</span>
 
-  <span class="lead-duration duration">13.540</span>
+  <span class="lead-duration duration">5.783</span>
 
 </div>
 
@@ -249,11 +250,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">kullanici <span class="argument">&quot;nutella&quot;</span> icin arama yapar</span>
 
-  <span class="lead-duration duration">16.637</span>
+  <span class="lead-duration duration">15.015</span>
 
 </div>
 
@@ -261,6 +262,47 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#twotabsearchtextbox&quot;}
+  (Session info: chrome=106.0.5249.62)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'AKIN-ALKAN', ip: '192.168.1.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac4f3cbe4c61fcdab736dce32fc6612f, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.62, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\allam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:18749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:18749/devtoo..., se:cdpVersion: 106.0.5249.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac4f3cbe4c61fcdab736dce32fc6612f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.sendKeys(Unknown Source)
+	at stepDefinitions.AmazonDefinitions.kullaniciIcinAramaYapar(AmazonDefinitions.java:63)
+	at &#10045;.kullanici &quot;nutella&quot; icin arama yapar(file:///C:/Selenium/com.batch59Cucumber/src/test/resources/features/US1007_ScenarioOutline.feature:8)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -276,11 +318,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">sonuclarin <span class="argument">&quot;nutella&quot;</span> icerdigini test eder</span>
 
-  <span class="lead-duration duration">0.136</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -303,11 +345,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">sayfayi kapatir</span>
 
-  <span class="lead-duration duration">0.520</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -334,7 +376,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -346,13 +388,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-3" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.656</span>
+  <span class="lead-duration duration">0.745</span>
 
           </div>
 
@@ -361,6 +403,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
+      <a>screenshots</a>
+      <a href="embeddings/embedding_-1936564445.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-5" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1936564445.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
@@ -373,20 +430,21 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_3347770226.html">US1007 kullanici amazonda istedigi kelimeleri aratir</a>
+      <a href="report-feature_3_3347770226.html">US1007 kullanici amazonda istedigi kelimeleri aratir</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_841777745.html">@scenarioOutline</a>
+       <a href="report-tag_2149501486.html">@pr1</a>
 </div>
 
 
-  <span class="lead-duration duration">14.480</span>
+  <span class="lead-duration duration">16.980</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -399,14 +457,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-4" class="collapse collapsable-details ">
+  <div id="element-6" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -418,7 +476,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -426,7 +484,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">kullanici <span class="argument">&quot;amazonUrl&quot;</span> anasayfasinda</span>
 
-  <span class="lead-duration duration">8.546</span>
+  <span class="lead-duration duration">9.162</span>
 
 </div>
 
@@ -453,7 +511,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">kullanici <span class="argument">&quot;java&quot;</span> icin arama yapar</span>
 
-  <span class="lead-duration duration">5.536</span>
+  <span class="lead-duration duration">7.293</span>
 
 </div>
 
@@ -480,7 +538,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">sonuclarin <span class="argument">&quot;java&quot;</span> icerdigini test eder</span>
 
-  <span class="lead-duration duration">0.064</span>
+  <span class="lead-duration duration">0.109</span>
 
 </div>
 
@@ -507,7 +565,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">sayfayi kapatir</span>
 
-  <span class="lead-duration duration">0.331</span>
+  <span class="lead-duration duration">0.415</span>
 
 </div>
 
@@ -534,7 +592,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -546,13 +604,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details ">
+    <div id="after-8" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">2.879</span>
+  <span class="lead-duration duration">3.384</span>
 
           </div>
 
@@ -573,20 +631,21 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_3347770226.html">US1007 kullanici amazonda istedigi kelimeleri aratir</a>
+      <a href="report-feature_3_3347770226.html">US1007 kullanici amazonda istedigi kelimeleri aratir</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_841777745.html">@scenarioOutline</a>
+       <a href="report-tag_2149501486.html">@pr1</a>
 </div>
 
 
-  <span class="lead-duration duration">14.004</span>
+  <span class="lead-duration duration">13.116</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -599,14 +658,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-9" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -618,7 +677,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -626,7 +685,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">kullanici <span class="argument">&quot;amazonUrl&quot;</span> anasayfasinda</span>
 
-  <span class="lead-duration duration">8.103</span>
+  <span class="lead-duration duration">7.743</span>
 
 </div>
 
@@ -653,7 +712,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">kullanici <span class="argument">&quot;elma&quot;</span> icin arama yapar</span>
 
-  <span class="lead-duration duration">5.566</span>
+  <span class="lead-duration duration">5.017</span>
 
 </div>
 
@@ -707,7 +766,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">sayfayi kapatir</span>
 
-  <span class="lead-duration duration">0.281</span>
+  <span class="lead-duration duration">0.302</span>
 
 </div>
 
@@ -734,7 +793,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-9">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -746,13 +805,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-9" class="inner-level collapse collapsable-details ">
+    <div id="after-11" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.450</span>
+  <span class="lead-duration duration">2.914</span>
 
           </div>
 
@@ -773,20 +832,21 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_3347770226.html">US1007 kullanici amazonda istedigi kelimeleri aratir</a>
+      <a href="report-feature_3_3347770226.html">US1007 kullanici amazonda istedigi kelimeleri aratir</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_841777745.html">@scenarioOutline</a>
+       <a href="report-tag_2149501486.html">@pr1</a>
 </div>
 
 
-  <span class="lead-duration duration">15.029</span>
+  <span class="lead-duration duration">10.622</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-12">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -799,14 +859,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-10" class="collapse collapsable-details ">
+  <div id="element-12" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -818,7 +878,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details ">
+  <div id="steps-13" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -826,7 +886,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">kullanici <span class="argument">&quot;amazonUrl&quot;</span> anasayfasinda</span>
 
-  <span class="lead-duration duration">9.067</span>
+  <span class="lead-duration duration">5.780</span>
 
 </div>
 
@@ -853,7 +913,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">kullanici <span class="argument">&quot;armut&quot;</span> icin arama yapar</span>
 
-  <span class="lead-duration duration">5.428</span>
+  <span class="lead-duration duration">4.128</span>
 
 </div>
 
@@ -880,7 +940,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">sonuclarin <span class="argument">&quot;armut&quot;</span> icerdigini test eder</span>
 
-  <span class="lead-duration duration">0.094</span>
+  <span class="lead-duration duration">0.323</span>
 
 </div>
 
@@ -907,7 +967,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">sayfayi kapatir</span>
 
-  <span class="lead-duration duration">0.438</span>
+  <span class="lead-duration duration">0.389</span>
 
 </div>
 
@@ -934,7 +994,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-14">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -946,13 +1006,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-12" class="inner-level collapse collapsable-details ">
+    <div id="after-14" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">2.556</span>
+  <span class="lead-duration duration">2.650</span>
 
           </div>
 

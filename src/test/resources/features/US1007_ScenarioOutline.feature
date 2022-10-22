@@ -1,6 +1,6 @@
 #amazon sayfasina gidip sirasiyla nutella,java elma armut aratip
   #sonuclari arama yaptigimiz kelimeyi icerdigini test edelim
-  @scenarioOutline
+  @scenarioOutline@pr1
 Feature: US1007 kullanici amazonda istedigi kelimeleri aratir
 
   Scenario Outline: TC12 amazonda listedeki elementleri aratma
