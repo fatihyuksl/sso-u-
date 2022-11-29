@@ -4,7 +4,7 @@ import io.cucumber.java.en.And;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.GuruPage;
-import utulities.Driver;
+import utilities.Driver;
 
 import java.util.List;
 

@@ -6,8 +6,8 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.AmazonPage;
-import utulities.ConfigReader;
-import utulities.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class AmazonDefinitions {
     AmazonPage amazonPage = new AmazonPage();

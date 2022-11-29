@@ -1,10 +1,9 @@
 package pages;
 
-import com.google.j2objc.annotations.Weak;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import utulities.Driver;
+import utilities.Driver;
 
 public class PearlyPage {
     public PearlyPage() {

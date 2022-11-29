@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                40,
-                7,
-                34,
+                12,
+                0,
+                0,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 81) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 12) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                7,
-                7
+                3,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 14) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -153,8 +153,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   4,
-                   3
+                   3,
+                   0
                ],
                backgroundColor: [
                 "#00B000",
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 7) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -230,7 +230,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
         <td>1</td>
-      <td>22 Oct 2022, 22:44</td>
+      <td>23 Nov 2022, 02:12</td>
     </tr>
   </tbody>
 </table>
@@ -325,24 +325,7 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-feature_2719004922.html">Form doldurma</a></td>
-
-        <td      class="passed"    >10</td>
-        <td      class="failed"    >5</td>
-        <td     class="skipped"   >30</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">45</td>
-
-        <td >0</td>
-        <td  class="failed"    >5</td>
-        <td class="total">5</td>
-
-        <td class="duration" data-value="45889512100">45.889</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_1_1979244224.html">Amazon Search</a></td>
+        <td class="tagname"><a href="report-feature_1979244224.html">Amazon Search</a></td>
 
         <td      class="passed"    >4</td>
         <td >0</td>
@@ -355,11 +338,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="12195116100">12.195</td>
+        <td class="duration" data-value="29177887600">29.177</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_2_2262913179.html">US1002 Kullanici ortak adimlari Baskground ile calistirir</a></td>
+        <td class="tagname"><a href="report-feature_1_2262913179.html">US1002 Kullanici ortak adimlari Baskground ile calistirir</a></td>
 
         <td      class="passed"    >4</td>
         <td >0</td>
@@ -372,28 +355,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="11214591600">11.214</td>
+        <td class="duration" data-value="22518696000">22.518</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_3_3347770226.html">US1007 kullanici amazonda istedigi kelimeleri aratir</a></td>
-
-        <td      class="passed"    >13</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >2</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">16</td>
-
-        <td  class="passed"    >3</td>
-        <td  class="failed"    >1</td>
-        <td class="total">4</td>
-
-        <td class="duration" data-value="61518777300">1:1.518</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_4_1979244224.html">Amazon Search</a></td>
+        <td class="tagname"><a href="report-feature_2_1841912273.html">US1003 Kullanici parametre kullanarak arama yapabilmeli</a></td>
 
         <td      class="passed"    >4</td>
         <td >0</td>
@@ -406,41 +372,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="30410610500">30.410</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_5_2262913179.html">US1002 Kullanici ortak adimlari Baskground ile calistirir</a></td>
-
-        <td      class="passed"    >1</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >2</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">4</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="21875112400">21.875</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_6_1841912273.html">US1003 Kullanici parametre kullanarak arama yapabilmeli</a></td>
-
-        <td      class="passed"    >4</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">4</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="17249435700">17.249</td>
+        <td class="duration" data-value="13835531100">13.835</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -448,33 +380,33 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>40</td>
-      <td>7</td>
-      <td>34</td>
+      <td>12</td>
       <td>0</td>
       <td>0</td>
-      <td>81</td>
+      <td>0</td>
+      <td>0</td>
+      <td>12</td>
 
-      <td>7</td>
-      <td>7</td>
-      <td>14</td>
+      <td>3</td>
+      <td>0</td>
+      <td>3</td>
 
-      <td class="duration">3:20.353</td>
-      <td>7</td>
+      <td class="duration">1:5.532</td>
+      <td>3</td>
     </tr>
     <tr>
       <td></td>
-      <td>49.38%</td>
-      <td>8.64%</td>
-      <td>41.98%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>50.00%</td>
-      <td>50.00%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>57.14%</td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

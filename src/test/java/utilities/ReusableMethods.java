@@ -1,4 +1,4 @@
-package utulities;
+package utilities;
 
 import com.github.javafaker.Faker;
 import org.apache.commons.io.FileUtils;

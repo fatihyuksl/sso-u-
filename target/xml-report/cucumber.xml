@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.068">
-    <testcase classname="US1013 kullanici excel bilgilerine ulasir" name="TC18 kullanici excel bilgilerini kullanir" time="6.519">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given kullanici excel  dosyasini kullanilabilir hale getirir................undefined
-Then 1.satirdaki 2.hucreyi yazdirir.........................................skipped
-And baskenti Jakarta olan ulke ismini yazdirir..............................skipped
-And Ulke sayisinin 190 oldugunu test eder...................................skipped
-And Fiziki olarak kullanilan satir sayisinin 191 oldugunu test eder.........skipped
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="34.336">
+    <testcase classname="Amazon Search" name="TC02 kullanici amazonda Nutella aratir" time="33.81">
+        <system-out><![CDATA[Given kullanici amazon anasayfasinda........................................passed
+Then kullanici Java icin arama yapar........................................passed
+And sonuclarin Java icerdigini test eder....................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
     </testcase>
 </testsuite>

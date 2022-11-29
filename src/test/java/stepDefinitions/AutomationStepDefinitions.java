@@ -7,8 +7,7 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import pages.AutomationPage;
-import utulities.Driver;
-import utulities.ReusableMethods;
+import utilities.Driver;
 
 public class AutomationStepDefinitions {
     AutomationPage auto = new AutomationPage();

@@ -4,7 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import pages.HerokuAppPage;
-import utulities.ReusableMethods;
+import utilities.ReusableMethods;
 
 public class HerokuAppStepDefinitions {
     HerokuAppPage page= new HerokuAppPage();

@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
 import pages.PracticeFormPage;
-import utulities.Driver;
+import utilities.Driver;
 
 import java.util.Random;
 
