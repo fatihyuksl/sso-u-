@@ -4,7 +4,6 @@ utilities\ReusableMethods$1.class
 stepDefinitions\DataTablesStepDefinitions.class
 pages\GuruPage.class
 pages\PearlyPage.class
-runners\RunnerGrid.class
 pages\AutomationPage.class
 stepDefinitions\GridStepDefs.class
 utilities\ReusableMethods.class
@@ -18,7 +17,6 @@ runners\TestRunner.class
 utilities\Driver.class
 stepDefinitions\AmazonDefinitions.class
 stepDefinitions\Hooks.class
-runners\TestRunner2.class
 pages\DataTablesPage.class
 utilities\ConfigReader.class
 ExcelStepDefinitions.class
