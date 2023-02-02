@@ -201,5 +201,13 @@ public class ReusableMethods {
         FileUtils.copyFile(source, finalDestination);
         return  wElementSS;
     }
+    public static void scrooltoWebelement(WebElement element) {
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
+        jse.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+    public static void scrollBy(long scrollY) {
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
+        jse.executeScript("window.scrollBy(0," + scrollY + ")", "");
+    }
 
 }

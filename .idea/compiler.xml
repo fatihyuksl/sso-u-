@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="LeakMapİmporter" />
         <module name="com.batch59Cucumber" />
         <module name="batch81Cucumber" />
       </profile>

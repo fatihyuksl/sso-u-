@@ -21,13 +21,17 @@ Feature: Amazon Search
     Given Kullanici "https://sso.catchprobe.com/"  adresine gidilir
     When Kullanıcı Darkmap modulüne gider
     Then Darkmap de Staticts sayfasına ulaşır
-    When Kullanıcı Threatway modulüne giderAnd Threatway de Statics sayfasına ulaşır
-    When Kullanıcı Smartdeceptive modulüne giderThen Smartdeceptive de Home sayfasına ulaşır
+    When Kullanıcı Threatway modulüne gider
+    And Threatway de Statics sayfasına ulaşır
+    When Kullanıcı Smartdeceptive modulüne gider
+    Then Smartdeceptive de Home sayfasına ulaşır
     When SmartDecepitve Deception Operations bölümüne gelir
     And  SmartDeceptive de zone definitions da status ve ruuning durumlarını kontrol eder
     And  SmartDeceptive de zone definitions da herhangi bir aksaklık yok
     And  SmartDeceptive de Honeypot Definitions da status ve ruuning durumlarını kontrol eder
     And  SmartDeceptive de Honeypot Definitions da herhangi bir aksaklık yok
-    And Kullanıcı CrimeGround sayfasına ulaşırAnd Arama kısmına keyword ekleyip sonuçları gördürür
-    And Kullanıcı LeakMap sayfasına ulaşırAnd Dashboard bölümüne gelir Data Leak Fields kısmını görür
+    And Kullanıcı CrimeGround sayfasına ulaşır
+    And Arama kısmına keyword ekleyip sonuçları gördürür
+    And Kullanıcı LeakMap sayfasına ulaşır
+    And Dashboard bölümüne gelir Data Leak Fields kısmını görür
     Then sayfayi kapatir

@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.68">
-    <testcase classname="Amazon Search" name="TC03 kullanici amazonda Nutella aratir" time="22.467">
-        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=109.0.5414.120)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'FATIH_YUKSEL_PC', ip: '10.212.134.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5ddabcb21c197dfed0dcc31ac90e228d, findElement {using=xpath, value=(//input)[2]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\DELL~2.DES\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:53231}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53231/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5ddabcb21c197dfed0dcc31ac90e228d" type="org.openqa.selenium.NoSuchWindowException">
-            <![CDATA[Given Kullanici "https://sso.catchprobe.com/"  adresine gidilir.............failed
-When Kullanıcı Darkmap modulüne gider.......................................skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="72.511">
+    <testcase classname="Amazon Search" name="TC03 kullanici amazonda Nutella aratir" time="72.205">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()='DarkMap']&quot;}&#10;  (Session info: chrome=109.0.5414.120)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'FATIHISI', ip: '10.212.134.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0005e3232318260a061ba491cad5affb, findElement {using=xpath, value=//span[text()='DarkMap']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59567/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0005e3232318260a061ba491cad5affb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Kullanici "https://sso.catchprobe.com/"  adresine gidilir.............passed
+When Kullanıcı Darkmap modulüne gider.......................................failed
 Then Darkmap de Staticts sayfasına ulaşır...................................skipped
-When Kullanıcı Threatway modulüne giderAnd Threatway de Statics sayfasına ulaşır.skipped
-When Kullanıcı Smartdeceptive modulüne giderThen Smartdeceptive de Home sayfasına ulaşır.skipped
+When Kullanıcı Threatway modulüne gider.....................................skipped
+And Threatway de Statics sayfasına ulaşır...................................skipped
+When Kullanıcı Smartdeceptive modulüne gider................................skipped
+Then Smartdeceptive de Home sayfasına ulaşır................................skipped
 When SmartDecepitve Deception Operations bölümüne gelir.....................skipped
 And SmartDeceptive de zone definitions da status ve ruuning durumlarını kontrol eder.skipped
 And SmartDeceptive de zone definitions da herhangi bir aksaklık yok.........skipped
 And SmartDeceptive de Honeypot Definitions da status ve ruuning durumlarını kontrol eder.skipped
 And SmartDeceptive de Honeypot Definitions da herhangi bir aksaklık yok.....skipped
-And Kullanıcı CrimeGround sayfasına ulaşırAnd Arama kısmına keyword ekleyip sonuçları gördürür.skipped
-And Kullanıcı LeakMap sayfasına ulaşırAnd Dashboard bölümüne gelir Data Leak Fields kısmını görür.skipped
+And Kullanıcı CrimeGround sayfasına ulaşır..................................skipped
+And Arama kısmına keyword ekleyip sonuçları gördürür........................skipped
+And Kullanıcı LeakMap sayfasına ulaşır......................................skipped
+And Dashboard bölümüne gelir Data Leak Fields kısmını görür.................skipped
 Then sayfayi kapatir........................................................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='DarkMap']"}
   (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'FATIH_YUKSEL_PC', ip: '10.212.134.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'FATIHISI', ip: '10.212.134.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5ddabcb21c197dfed0dcc31ac90e228d, findElement {using=xpath, value=(//input)[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\DELL~2.DES\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:53231}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53231/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5ddabcb21c197dfed0dcc31ac90e228d
+Command: [0005e3232318260a061ba491cad5affb, findElement {using=xpath, value=//span[text()='DarkMap']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59567/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0005e3232318260a061ba491cad5affb
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -43,9 +47,9 @@ Session ID: 5ddabcb21c197dfed0dcc31ac90e228d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy23.sendKeys(Unknown Source)
-	at stepDefinitions.AmazonDefinitions.kullaniciAdresineGidilir(AmazonDefinitions.java:114)
-	at ✽.Kullanici "https://sso.catchprobe.com/"  adresine gidilir(file:///C:/Users/Dell.DESKTOP-4D55NFB/IdeaProjects/com.batch59Cucumber/src/test/resources/features/US1001_amazonSearch.feature:21)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepDefinitions.AmazonDefinitions.kullanıcıDarkmapModulüneGider(AmazonDefinitions.java:247)
+	at ✽.Kullanıcı Darkmap modulüne gider(file:///C:/Users/ASUS/IdeaProjects/SSO/src/test/resources/features/US1001_amazonSearch.feature:22)
 ]]>
         </failure>
     </testcase>

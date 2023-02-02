@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                4,
+                5,
                 1,
-                12,
+                15,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 17) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 21) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -230,7 +230,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
         <td>1</td>
-      <td>02 Feb 2023, 16:47</td>
+      <td>02 Feb 2023, 17:19</td>
     </tr>
   </tbody>
 </table>
@@ -327,18 +327,18 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-feature_1979244224.html">Amazon Search</a></td>
 
-        <td >0</td>
+        <td      class="passed"    >1</td>
         <td      class="failed"    >1</td>
-        <td     class="skipped"   >12</td>
+        <td     class="skipped"   >15</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">13</td>
+        <td class="total">17</td>
 
         <td >0</td>
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="22456220100">22.456</td>
+        <td class="duration" data-value="55688107200">55.688</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
@@ -363,25 +363,25 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>4</td>
+      <td>5</td>
       <td>1</td>
-      <td>12</td>
+      <td>15</td>
       <td>0</td>
       <td>0</td>
-      <td>17</td>
+      <td>21</td>
 
       <td>1</td>
       <td>1</td>
       <td>2</td>
 
-      <td class="duration">37.698</td>
+      <td class="duration">1:10.930</td>
       <td>2</td>
     </tr>
     <tr>
       <td></td>
-      <td>23.53%</td>
-      <td>5.88%</td>
-      <td>70.59%</td>
+      <td>23.81%</td>
+      <td>4.76%</td>
+      <td>71.43%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
