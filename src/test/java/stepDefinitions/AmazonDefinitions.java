@@ -254,6 +254,14 @@ public class AmazonDefinitions {
     @Then("Darkmap de Staticts sayfasına ulaşır")
     public void darkmapDeStatictsSayfasınaUlaşır() {
         Driver.getDriver().get(ConfigReader.getProperty("darkmap"));
+   /*     ReusableMethods.waitFor(3);
+        SSO.customername.sendKeys(ConfigReader.getProperty("fuksel"));
+
+        ReusableMethods.waitFor(3);
+        SSO.password.sendKeys(ConfigReader.getProperty("password"));
+        ReusableMethods.waitFor(3);
+        SSO.Smartbutton.click();
+        ReusableMethods.waitFor(10);*/
 /*  JavascriptExecutor executor = (JavascriptExecutor)driver;
   executor.executeScript("document.body.style.zoom = '80%'");*/
         actions = new Actions(Driver.getDriver());
@@ -390,5 +398,33 @@ public class AmazonDefinitions {
         ReusableMethods.scrooltoWebelement(SSO.Quickpage);
         ReusableMethods.waitFor(2);
         SSO.Shw1.click();
+    }
+
+    @Given("Kullanici smartdeceptive modulüne gider")
+    public void kullaniciSmartdeceptiveModulüneGider() {
+        Driver.getDriver().get(ConfigReader.getProperty("smartdeceptive"));
+        ReusableMethods.waitFor(3);
+        SSO.customername.sendKeys(ConfigReader.getProperty("fuksel"));
+
+        ReusableMethods.waitFor(3);
+        SSO.password.sendKeys(ConfigReader.getProperty("password"));
+        ReusableMethods.waitFor(3);
+        SSO.Smartbutton.click();
+        ReusableMethods.waitFor(10);
+    }
+
+    @Then("Smartdeceptive sayfasına ulaşır")
+    public void smartdeceptiveSayfasınaUlaşır() {
+    }
+
+    @And("Smartdeceptive de Template Settings bölümüne gelir")
+    public void smartdeceptiveDeTemplateSettingsBölümüneGelir() {
+        ReusableMethods.waitFor(3);
+        SSO.DeceptionOperations.click();
+        ReusableMethods.waitFor(3);
+    }
+
+    @And("Smartdeceptive de ilgili template leri kontrol eder")
+    public void smartdeceptiveDeIlgiliTemplateLeriKontrolEder() {
     }
 }

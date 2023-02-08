@@ -183,6 +183,38 @@ public class AmazonPage {
     public WebElement Refresh;
     @FindBy(xpath = "(//*[@class='btn m-btn--pill btn-outline-success btn-sm m--margin-right-3'])[2]")
     public WebElement Refresh2;
+    @FindBy(xpath = "(//li[@class='nav-item m-tabs__item'])[3]")
+    public WebElement http;
+    @FindBy(xpath = "(//li[@class='nav-item m-tabs__item'])[4]")
+    public WebElement s7comn;
+    @FindBy(xpath = "(//li[@class='nav-item m-tabs__item'])[5]")
+    public WebElement bacnet;
+    @FindBy(xpath = "(//li[@class='nav-item m-tabs__item'])[6]")
+    public WebElement enip;
+    @FindBy(xpath = "(//li[@class='nav-item m-tabs__item'])[7]")
+    public WebElement snmp;
+    @FindBy(xpath = "(//li[@class='nav-item m-tabs__item'])[8]")
+    public WebElement modbus;
+    @FindBy(xpath = "(//li[@class='nav-item m-tabs__item'])[9]")
+    public WebElement http_iis;
+    @FindBy(xpath = "(//li[@class='nav-item m-tabs__item'])[10]")
+    public WebElement exchange;
+    @FindBy(xpath = "(//li[@class='nav-item m-tabs__item'])[11]")
+    public WebElement rdp;
+    @FindBy(xpath = "(//li[@class='nav-item m-tabs__item'])[12]")
+    public WebElement ftp;
+    @FindBy(xpath = "(//li[@class='nav-item m-tabs__item'])[13]")
+    public WebElement sql_server;
+    @FindBy(xpath = "(//li[@class='nav-item m-tabs__item'])[14]")
+    public WebElement adb;
+    @FindBy(xpath = "(//li[@class='nav-item m-tabs__item'])[15]")
+    public WebElement mysql;
+    @FindBy(xpath = "//tbody//tr[1]//td[4]")
+    public WebElement admin;
+    @FindBy(xpath = "//*[@class='btn m-btn--pill btn-outline-success btn-sm m--margin-right-3']")
+    public WebElement createtemplate;
+    @FindBy(xpath = "//button[@class='btn btn-sm btn-outline-success']")
+    public WebElement exit;
 
 
 
